@@ -6,8 +6,7 @@ const app = express();
 app.use(express.json({ limit: "1mb" }));
 
 const client = new OpenAI({
-  apiKey: process.env.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
-  
+  apiKey: process.env.OPENAI_API_KEY
 });
 
 app.get("/", (req, res) => {
